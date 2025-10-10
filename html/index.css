@@ -1,0 +1,11 @@
+body {
+    position: relative;
+    margin: calc(3.1vw * var(--safe-zone)) calc(5vw * var(--safe-zone));
+}
+
+iframe {
+    position: absolute;
+    border: none;
+    width: 100%;
+    height: 100%;
+}

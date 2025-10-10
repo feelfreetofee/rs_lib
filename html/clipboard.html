@@ -1,0 +1,14 @@
+<style>
+textarea {
+    display: none;
+}
+</style>
+<script>
+const textarea = document.querySelector('textarea')
+window.addEventListener('message', ({data: [value]}) => {
+    textarea.value = value
+    textarea.select()
+    document.execCommand('copy')
+})
+</script>
+<textarea></textarea>

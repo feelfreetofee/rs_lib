@@ -1,0 +1,35 @@
+---@enum pedType
+local PedType = {
+	player0 = 0,
+	player1 = 1,
+	networkPlayer = 2,
+	player2 = 3,
+	civmale = 4,
+	civfemale = 5,
+	cop = 6,
+	gangAlbanian = 7,
+	gangBiker1 = 8,
+	gangBiker2 = 9,
+	gangItalian = 10,
+	gangRussian = 11,
+	gangRussian2 = 12,
+	gangIrish = 13,
+	gangJamaican = 14,
+	gangAfricanAmerican = 15,
+	gangKorean = 16,
+	gangChineseJapanese = 17,
+	gangPuertoRican = 18,
+	dealer = 19,
+	medic = 20,
+	fireman = 21,
+	criminal = 22,
+	bum = 23,
+	prostitute = 24,
+	special = 25,
+	mission = 26,
+	swat = 27,
+	animal = 28,
+	army = 29
+}
+
+return PedType
