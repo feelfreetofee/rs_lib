@@ -53,6 +53,7 @@ local function writeMatrix(matrix)
     return blob
 end
 
+--- never used
 ---@param blob string
 ---@return vector3[]
 local function readMatrix(blob)
@@ -111,17 +112,18 @@ end
 
 local Gizmo = {}
 
----@param id string
 ---@param forward vector3
 ---@param right vector3
 ---@param up vector3
 ---@param position vector3
 ---@return gizmo
-function Gizmo:new(id, forward, right, up, position)
-    return setmetatable({
-        id = id,
+function Gizmo:new(forward, right, up, position)
+    local gizmo = setmetatable({
         blob = writeMatrix({right, forward, up, position})
     }, Prototype)
+    gizmo.id = tostring(gizmo):sub(8)
+    return gizmo
 end
+
 
 return Gizmo
