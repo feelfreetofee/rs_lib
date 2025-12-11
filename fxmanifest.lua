@@ -1,7 +1,6 @@
 game 'gta5'
 fx_version 'cerulean'
 
-lua54 'yes'
 use_experimental_fxv2_oal 'yes'
 
 file 'html/**'
@@ -19,4 +18,5 @@ client_script 'resource/client/init.lua'
 server_script 'resource/server/init.lua'
 
 nui_page 'clipboard' 'clipboard.html'
+
 nui_page 'list' 'list/index.html'
